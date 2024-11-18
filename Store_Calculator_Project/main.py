@@ -24,7 +24,7 @@ while True:
         except ValueError:                              # Handle invalid inputs that cannot be converted to a number
             print("Invalid input. Please enter a valid number or 'q' to quit.")
 
-    else: 
+    else:                                           # If the user input is "q"
         print("\nReceipt Generated:")               # Print a receipt header
         for i, price in enumerate(prices, start=1): # Loop through the prices list with item numbers
             print(f"Item {i}: {price}")             # Display each item number and its price
