@@ -1,4 +1,3 @@
-
 # Created a store calculator for a simple general store to calculate the total amount 
 # Quits the loop when the user presses 'q' and generates a receipt.
 
@@ -23,7 +22,7 @@ while True:
         price = float(userinput)
         if price < 0:                               # Check if the input is a negative number
             print("Invalid input. Please enter a positive number or 'q' to quit.")
-            continue
+            continue # Continue the loop
         sum = sum + price                           # Add the entered price to the total sum
         prices.append(price)                        # Add the entered price to the prices list
         print(f"The total price so far: {sum}.")    # Display the updated total price
